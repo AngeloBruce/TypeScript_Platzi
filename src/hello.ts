@@ -1,1 +1,1 @@
-console.log('Hello Platzi');
+console.log('Hello Platzi Word');
