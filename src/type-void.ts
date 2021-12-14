@@ -18,3 +18,33 @@ function showFormattedInfo(user: any) {
 }
 
 showFormattedInfo({ id: 1, username: 'luixaviles', firstName: 'Luis' });
+
+//tipo void, como tipo de dato en variable
+let unusable: void;
+unusable = null;
+unusable = undefined;
+
+// Tipo: Never
+
+function handleError(code: number, message: string) {
+
+    //Process your code here
+    // Generate a message
+    throw new Error(`${message}. Code: ${code}`);
+}
+
+try {
+    handleError(404, 'Not Found');
+} catch (error) {
+}
+
+function sunNumbers(limit: number): never {
+    let sum = 0;
+    while (true) {
+        sum++;
+    }
+    // return sum;
+}
+
+sunNumbers(10);
+// ciclo infinito, programa nunca termina

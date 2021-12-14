@@ -1,4 +1,3 @@
-"use strict";
 console.log('hola Typesript Plazi');
 // Number
 //Explicito
